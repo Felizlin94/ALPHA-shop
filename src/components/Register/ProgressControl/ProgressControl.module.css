@@ -1,0 +1,31 @@
+.buttonContainer {
+  width: 540px;
+  height: 72px;
+  justify-content: end;
+  display: flex;
+  border-top: 1px #E6E6EB solid;
+  position: absolute;
+  top: 650px;
+  margin-bottom: 120px;
+}
+
+.leftButton {
+  background-color: rgb(255, 255, 255);
+  line-height: 20px;
+  width: 77px;
+  height: 24px;
+  margin: auto 288px 0 0;
+  border: 0;
+}
+
+.rightButton {
+  background-color: #F67599;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  width: 174px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 8px;
+  margin: auto 0 0 0;
+  border: 0;
+}

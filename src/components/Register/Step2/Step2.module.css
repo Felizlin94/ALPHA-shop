@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  width: 540px;
+  height: 288px;
+  left: 0px;
+}
+
+.topic {
+  margin: auto;
+  width: 540px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: start;
+  padding-bottom: 25px;
+}
+
+.option {
+  height: 60px;
+  width: 415px;
+  margin-top: 24px;
+  padding-left: 20px;
+  display: flex;
+  border: solid 1px rgb(93, 91, 91);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+
+.option input {
+  width: 20px;
+  color: black;
+  display: none;
+}
+
+.checkMark {
+  margin: 20px 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ffffff;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.option input:checked~.checkMark {
+  margin: 20px 0;
+  height: 8.4px;
+  width: 8.4px;
+  background-color: #f4f4f4;
+  border: solid 6px rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.deliveryMode {
+  text-align: left;
+  width: 283px;
+  font-size: 14px;
+  margin: 11px 0 2px 20px;
+}
+
+.deliveryTime {
+  text-align: left;
+  width: 318px;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+
+.deliveryFee {
+  margin: 13px 10px 31px 13px;
+  font-size: 12px;
+}

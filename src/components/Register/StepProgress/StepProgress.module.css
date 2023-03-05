@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  width: 540px;
+  height: 110px;
+  margin: 140px 130px 64px 0px;
+  left: 0px;
+}
+
+.topic {
+  font-weight: 700;
+  font-size: 32px;
+  width: 64px;
+  margin-top: 0px;
+}
+
+
+.stepArea {
+  display: flex;
+  margin-top: 48px;
+  justify-content: space-between;
+}
+
+.aStep {
+  display: flex;
+}
+
+.stepNumber {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 12px;
+  background-color: black;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+.stepNumberGrey {
+  color: #AFB1BD;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  padding: 4px 8px;
+  border-radius: 50%;
+  border: solid 0.1px #AFB1BD;
+}
+
+.stepNumberWhite {
+  color: #000000;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  padding: 4px 8px;
+  border-radius: 50%;
+  border: solid 0.1px #000000;
+}
+
+.stepChecked {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 10px;
+  background-color: black;
+  padding: 2px 7px 2px 6.9px;
+  border-radius: 50%;
+}
+
+
+.stepName {
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.stepNameGrey {
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 8px;
+  color: #AFB1BD;
+}
+
+.line {
+  height: 3px;
+  width: 60px;
+  border-width: 0;
+  background-color: #000;
+  margin: auto 33px;
+}
+
+.lineGrey {
+  height: 3px;
+  width: 60px;
+  border-width: 0;
+  background-color: #AFB1BD;
+  margin: auto 33px;
+}

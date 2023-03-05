@@ -1,0 +1,9 @@
+.app {
+  text-align: center;
+  font-family: sans-serif;
+
+  justify-content: center;
+  width: 1110px;
+  height: 700px;
+  margin: auto;
+}

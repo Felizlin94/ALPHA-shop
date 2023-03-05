@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  width: 540px;
+  height: 288px;
+  left: 0px;
+}
+
+.topic {
+  width: 540px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: start;
+  margin-bottom: 14px;
+}
+
+.formArea {
+  width: 540px;
+  margin: auto;
+  align-items: center;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 64px;
+  align-items: start;
+}
+
+
+
+.inputBox input {
+  border-radius: 4px;
+  height: 40px;
+  width: 340px;
+  padding-left: 10px;
+  margin-top: 8px;
+  border: 1px #4A4A4A solid;
+}
+
+.inputBox2 {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+  height: 64px;
+}
+
+.inputSubBox {
+  display: grid;
+  grid-column: 1fr 1fr;
+}
+
+.inputSubBox label {
+  text-align: start;
+}
+
+
+.inputSubBox input {
+  border-radius: 4px;
+  height: 40px;
+  width: 235px;
+  padding-left: 10px;
+  margin-top: 8px;
+  border: 1px #4A4A4A solid;
+}

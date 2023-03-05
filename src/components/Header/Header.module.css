@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  width: 1110px;
+  height: 60px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  z-index: 99;
+}
+
+.navText {
+  width: 384px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-right: 86px;
+}
+
+.text {
+  list-style: none;
+  display: inline;
+  height: 24px;
+  font-size: 16px;
+  flex: none;
+}
+
+.text a {
+  text-decoration: none;
+  color: #2A2A2A;
+  font-weight: 600;
+}
+
+
+.brand {
+  position: relative;
+  margin-left: -300px;
+  height: 30px;
+  top: 15px;
+}
+
+
+
+.navIcon {
+  display: flex;
+  gap: 30px;
+}
+
+.icons {
+  list-style: none;
+  width: 24px;
+}
