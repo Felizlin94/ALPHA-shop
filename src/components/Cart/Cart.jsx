@@ -1,11 +1,11 @@
 import styles from './Cart.module.css';
 import plus from '../../icons/plus.svg'
 import minus from '../../icons/minus.svg'
-import { useContext, useState } from "react";
-import { CartContext, cartItems, PriceTotal } from '../Context/CartContext.js'
+import { useContext } from "react";
+import { CartContext } from '../Context/CartContext.js'
 
-export default function Cart() {
-  const [products, setProducts] = useState(cartItems);
+export default function Cart({ totalPrice }) {
+  const [products, setProducts] = useContext(CartContext);
   const cart = useContext(CartContext)
 
   function handleMinusClick(itemID) {
@@ -25,7 +25,7 @@ export default function Cart() {
           return product
         }
       }
-    }))
+    }));
   };
 
   function handlePlusClick(itemID) {
@@ -39,6 +39,7 @@ export default function Cart() {
         return product
       }
     }))
+
   };
 
   const itemList = products.map(item => {
@@ -73,7 +74,7 @@ export default function Cart() {
         </div>
         <div className={styles.totalAmount}>
           <div className={styles.infoText}>小計</div>
-          <div className={styles.resultText}><PriceTotal items={products} /></div>
+          <div className={styles.resultText}>${totalPrice}</div>
         </div>
       </>
     )
@@ -82,7 +83,6 @@ export default function Cart() {
   return (
     <div className={styles.container}>
       <p className={styles.topic}>購物籃</p>
-
       <CartContext.Provider value={{ cart }} >
         {itemList}
         <FeeAndTotalPrice />

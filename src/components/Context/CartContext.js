@@ -18,17 +18,3 @@ export const cartItems = [
 ]
 
 export const CartContext = createContext(cartItems);
-
-// total price calculation
-export function PriceTotal({ items }) {
-  let totalPrice = 0;
-  items.map(product => {
-    totalPrice += (product.price * product.quantity);
-    return totalPrice;
-  });
-  return (
-    <span>{'$' + totalPrice}</span>
-  )
-}
-
-

@@ -8,17 +8,16 @@ import Step2 from './components/Register/Step2/Step2.jsx';
 import Step3 from './components/Register/Step3/Step3.jsx';
 import ProgressControl from './components/Register/ProgressControl/ProgressControl.jsx';
 import Cart from './components/Cart/Cart.jsx';
-import { CartContext, PriceTotal } from './components/Context/CartContext.js';
+import { CartContext, cartItems } from './components/Context/CartContext.js';
 import { CreditCardContext, creditCardInfo } from './components/Context/CreditCardContext';
 
 import styles from './App.module.css';
 
 function App() {
   const [step, setStep] = useState(1);
-  const cart = useContext(CartContext)
-  const creditCards = useContext(CreditCardContext)
+  const [products, setProducts] = useState(cartItems);
   const [creditCard, setCreditCard] = useState(creditCardInfo);
-
+  const creditCards = useContext(CreditCardContext);
 
   function handleInputChange(e) {
     setCreditCard({
@@ -27,8 +26,17 @@ function App() {
     })
   };
 
+  function Total(product) {
+    let total = 0
+    product.forEach(item => {
+      total += item.price * item.quantity
+    })
+    return total
+  }
+
   function handleSubmit() {
     console.log(creditCard)
+    console.log(`The total price is: $${Total(products)}!`)
   }
 
   function handlePrevClick() {
@@ -47,7 +55,7 @@ function App() {
     <div className={styles.app} >
       <Header />
       <StepProgress step={step} />
-      <CartContext.Provider value={{ cart }} >
+      <CartContext.Provider value={[products, setProducts]} >
         <CreditCardContext.Provider value={{ creditCards }}>
           {step === 1 && <Step1 />}
           {step === 2 && <Step2 />}
@@ -58,7 +66,7 @@ function App() {
             onNextClick={handleNextClick}
             onSubmition={handleSubmit}
           />
-          <Cart />
+          <Cart totalPrice={Total(products)} />
         </CreditCardContext.Provider>
       </CartContext.Provider>
     </div>
