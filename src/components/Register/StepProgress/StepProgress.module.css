@@ -27,18 +27,18 @@
 .stepNumber {
   color: rgb(255, 255, 255);
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11.5px;
   background-color: black;
-  padding: 4px 8px;
+  padding: 4px 7px;
   border-radius: 50%;
 }
 
 .stepNumberGrey {
   color: #AFB1BD;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11.5px;
   background-color: rgb(255, 255, 255);
-  padding: 4px 8px;
+  padding: 4px 7px;
   border-radius: 50%;
   border: solid 0.1px #AFB1BD;
 }
@@ -46,9 +46,9 @@
 .stepNumberWhite {
   color: #000000;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11.5px;
   background-color: rgb(255, 255, 255);
-  padding: 4px 8px;
+  padding: 4px 7px;
   border-radius: 50%;
   border: solid 0.1px #000000;
 }
@@ -58,20 +58,20 @@
   font-weight: 700;
   font-size: 10px;
   background-color: black;
-  padding: 2px 7px 2px 6.9px;
+  padding: 2px 6px;
   border-radius: 50%;
 }
 
 
 .stepName {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   padding-left: 8px;
 }
 
 .stepNameGrey {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   padding-left: 8px;
   color: #AFB1BD;
 }
